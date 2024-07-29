@@ -1,0 +1,130 @@
+/* Base styles for larger screens (Desktops) */
+.container {
+    height: auto; /* Adjusted for content */
+    width: 98%;
+    /* background-image: url("https://res.cloudinary.com/ddehbjyiy/image/upload/v1722245391/mn_nsd9be.jpg"); */
+    background-color: none;
+    margin: 0 auto; /* Center the container */
+}
+
+.rotate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto; /* Adjusted for content */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin: 15px 0; /* Margin adjusted for better spacing */
+}
+
+.pic {
+    width: 30%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.head {
+    padding: 10px;
+    font-style: italic;
+    font-family: "Roboto";
+    font-size: 20px;
+    color: green; /* Removed quotes */
+    text-align: center; /* Center align text for better appearance */
+}
+
+.line {
+    margin-top: 10px; /* Adjust margin-top */
+}
+
+.horizantal {
+    color: green;
+    font-size: 50px;
+    text-align: center; /* Center align horizontal rule */
+}
+
+.direction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.video {
+    height: auto; /* Adjusted for content */
+    width: 80%;
+    margin: 0 auto; /* Center align video */
+    display: block; /* Block display for centering */
+}
+
+.para {
+    font-family: "Roboto";
+    text-align: center; /* Center align text */
+}
+
+.heading {
+    color: blueviolet;
+    text-align: center; /* Center align heading text */
+}
+
+/* Styles for tablets (Portrait and Landscape) */
+@media (max-width: 1024px) {
+    .container {
+        width: 95%; /* Slightly smaller width for tablets */
+    }
+
+    .rotate {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        height: auto; /* Adjust height based on content */
+        align-items: center; /* Center align items */
+    }
+
+    .pic {
+        width: 50%; /* Adjust image size for tablets */
+        margin-bottom: 10px; /* Space between images */
+    }
+
+    .video {
+        width: 90%; /* Adjust video width */
+        margin: 20px auto; /* Center align video with margin */
+    }
+
+    .heading {
+        font-size: 18px; /* Smaller font size for tablets */
+    }
+
+    .para {
+        font-size: 16px; /* Adjust paragraph font size for better readability */
+    }
+}
+
+/* Styles for mobile phones (Portrait and Landscape) */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px; /* Add padding to ensure content doesn’t touch edges */
+    }
+
+    .rotate {
+        flex-direction: column; /* Stack elements vertically */
+        height: auto; /* Adjust height based on content */
+        align-items: center; /* Center align items */
+    }
+
+    .pic {
+        width: 100%; /* Full width for images */
+        margin-bottom: 10px; /* Space between images */
+    }
+
+    .video {
+        width: 100%; /* Full width for video */
+        margin: 20px auto; /* Center align video with margin */
+    }
+
+    .heading {
+        font-size: 16px; /* Smaller font size for mobile */
+    }
+
+    .para {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+}

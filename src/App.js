@@ -1,24 +1,16 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Birthday from './Birthday';
 
 function App() {
+  const videoUrl = "https://res.cloudinary.com/ddehbjyiy/video/upload/v1722252547/video_wf3vbi.mp4";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=''>
+      <div className="App">
+        <Birthday  videoUrl={videoUrl} />
+      </div>
     </div>
+    
   );
 }
 
